@@ -1,0 +1,31 @@
+.center {
+    text-align: center;
+    border: 3px solid red;
+}
+
+img {
+    border-radius: 50%;
+}
+
+#text1 {
+    text-align: left;
+  
+
+}
+
+
+#img1 {
+    float: none;
+}
+
+
+#text2 {
+    text-align: right;
+ 
+
+}
+
+
+#img2 {
+    float: none;
+}
