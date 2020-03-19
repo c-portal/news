@@ -1,11 +1,146 @@
-html,
 body {
-  padding: 0;
+
+
+
   margin: 0;
 
-  background-color: #181818;
+
+  text-align: center;
+  
+  background: #141313;
+
 
 }
+
+#container {
+
+  padding: 10;
+  margin: 15;
+
+  background-color: #000000;
+  border-radius: 25px;
+
+
+
+
+}
+
+
+h1 {
+  display: flex;
+  margin: 0;
+  font-size: 110px;
+  font-weight: normal;
+  display: inline-block;
+  color: white;
+  justify-content:  right;
+  text-align: right;
+  padding: 30px;
+  overflow: hidden;
+  direction: rtl;
+}
+
+
+
+.box {
+
+
+
+
+  position: unset;
+
+
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 30;
+
+
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: right;
+  justify-content: right;
+
+  align-items: right;
+  padding: 0;
+
+  box-sizing: border-box;
+  display: flex;
+  direction: rtl;
+
+
+
+  background: #1e1e1e;
+
+  border-radius: 25px;
+
+  flex-direction: row;
+
+
+}
+
+.box .thumb {
+
+  vertical-align: middle;
+
+}
+
+.box .thumb img {
+
+  display: flex;
+  flex-direction: column;
+
+
+
+
+  margin-left: 22;
+  margin-right: 10;
+  margin-top: 10;
+  margin-bottom: 10;
+
+  width: 100px;
+  height: 75px;
+  border-radius: 15px;
+
+
+}
+
+.box .title a {
+
+  display: flex;
+  flex-direction: column;
+
+  word-wrap: break-word;
+
+  text-decoration: none;
+  margin-bottom: 10;
+  text-align: right;
+  color: white;
+  font-size: x-large;
+  margin: 5;
+  margin-top: 10;
+
+
+
+}
+
+.box .title p {
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10;
+  padding: 0;
+  text-align: right;
+  color: rgb(138, 138, 138);
+  font-size: small;
+
+
+}
+
+
+
 
 .hide-me {
   visibility: hidden;
@@ -13,39 +148,9 @@ body {
   transform: scale(.75);
 }
 
-h1 {
-  margin-top: 0;
-  font-size: 20px;
-  font-weight: normal;
-  display: inline-block;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: black;
-  font-size: 30px;
-  padding: 30px;
-  transition: all 500ms;
-  overflow: hidden;
-  direction: rtl;
-  border: 2px solid red;
-  border-radius: 25px;
-
-
-
-}
-
-body {
-  font-family: Helvetica, sans-serif;
-  padding: 120px;
-  text-align: center;
-
-}
 
 button {
-  background-color: #000000;
+  background-color: #1e1e1e;;
   color: #FFF;
   border: none;
   padding: 10px 15px;
@@ -53,14 +158,15 @@ button {
   border-radius: 25px;
   cursor: pointer;
   outline: none;
-  box-shadow: 2px 2px 0 #000000;
+  box-shadow: 2px 2px 0 #1e1e1e;
   margin-bottom: 10px;
   margin-left: 18px;
   transition: opacity .4s ease-out, transform .4s ease-out, visibility .4s ease-out;
   position: relative;
   top: -10px;
+  justify-content: center;
 
-;
+  ;
 }
 
 button:hover {
@@ -68,35 +174,12 @@ button:hover {
 }
 
 button:active {
-  background-color: #000000;
+  background-color: #1e1e1e;
   box-shadow: none;
   position: relative;
   top: -8px;
   left: 2px;
 }
-
-
-
-
-p {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: black;
-  font-size: 30px;
-  color: #fff;
-  padding: 30px;
-  transition: all 500ms;
-  overflow: hidden;
-  direction: rtl;
-  
-  border: 2px solid red;
-  border-radius: 25px;
-
-
-}
-
 
 
 .loader {
@@ -107,8 +190,7 @@ p {
   border-top-color: rgb(250, 250, 250);
   border-left-color: rgb(255, 255, 255);
   border-radius: 50%;
-  animation: loader .750s 1000 ease forwards 
-
+  animation: loader .750s 1000 ease forwards
 }
 
 @keyframes loader {
