@@ -6,7 +6,7 @@ body {
 
 
   text-align: center;
-  
+
   background: #141313;
 
 
@@ -33,11 +33,12 @@ h1 {
   font-weight: normal;
   display: inline-block;
   color: white;
-  justify-content:  right;
+  justify-content: right;
   text-align: right;
   padding: 30px;
   overflow: hidden;
   direction: rtl;
+  margin-bottom: 100px;
 }
 
 
@@ -106,39 +107,8 @@ h1 {
 
 }
 
-.box .title a {
-
-  display: flex;
-  flex-direction: column;
-
-  word-wrap: break-word;
-
-  text-decoration: none;
-  margin-bottom: 10;
-  text-align: right;
-  color: white;
-  font-size: 40;
-    margin: 5;
-    margin-top: 10;
-    margin-left: 10;
 
 
-
-}
-
-.box .title p {
-
-  display: flex;
-  flex-direction: column;
-
-  margin-bottom: 10;
-  padding: 0;
-  text-align: right;
-  color: rgb(138, 138, 138);
-  font-size: 20;
-
-
-}
 
 
 
@@ -151,7 +121,8 @@ h1 {
 
 
 button {
-  background-color: #1e1e1e;;
+  background-color: #1e1e1e;
+  ;
   color: #FFF;
   border: none;
   padding: 10px 15px;
@@ -197,4 +168,74 @@ button:active {
   100% {
     transform: rotate(360deg)
   }
+}
+
+
+
+
+
+
+
+.box .title a {
+
+  display: flex;
+  flex-direction: column;
+
+  word-wrap: break-word;
+
+  text-decoration: none;
+  margin-bottom: 10;
+  text-align: right;
+  color: white;
+  font-size: 40;
+  margin: 5;
+  margin-left: 10;
+
+
+
+}
+
+
+
+/* 44444*/
+
+
+.share {
+
+  flex-direction: row;
+  display: flex;
+
+  direction: rtl;
+  margin-bottom: 10;
+
+}
+
+
+.facebook {
+  flex-direction: column;
+  place-self: flex-end;
+}
+
+.whatsapp {
+
+  margin-right: 30;
+
+  flex-direction: column;
+  place-self: flex-end;
+
+}
+
+
+
+
+.box .title p {
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: right;
+  color: rgb(138, 138, 138);
+  font-size: 20;
+
+
 }
