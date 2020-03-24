@@ -1,3 +1,29 @@
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+
+
+
 body {
 
 
@@ -45,7 +71,11 @@ h1 {
 
 .box {
 
+  
 
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
 
 
   position: unset;
@@ -127,7 +157,7 @@ button {
   border: none;
   padding: 10px 15px;
   font-size: 15px;
-  border-radius: 25px;
+  border-radius: 50px;
   cursor: pointer;
   outline: none;
   margin-bottom: 10px;
@@ -236,6 +266,50 @@ button:active {
   text-align: right;
   color: rgb(138, 138, 138);
   font-size: 20;
-
+  direction: initial;
 
 }
+
+
+#buttons  p {
+
+color: white;
+font-size: 30;
+
+}
+
+#buttons {
+
+  display: flex;
+}
+
+#btn1 {
+
+  margin-left: auto;
+  margin-right: 18;
+  font-size: 50;
+}
+
+#btn2 {
+  margin-right: auto;
+  font-size: 50;
+
+}
+
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+
