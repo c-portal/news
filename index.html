@@ -2,23 +2,20 @@
 
 <head>
     <title>
-آخر مستجدات و أخبار المغرب
+        آخر مستجدات و أخبار المغرب
     </title>
-<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-    
-    
-    
-        <link href='https://i.imgur.com/5on99YQ.png' rel='image_src'/>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
 
-    <link href='./Morocco-Flag.png' rel='image_src'/>
 
-    
-    </head>
-    
-    
+    <link href='./Morocco-Flag.png' rel='image_src' />
+
+
+</head>
+
+
 <header>
     <h1>[ آخر اخبار المغرب ]</h1>
-  
+
     <link rel="stylesheet" type="text/css" href="./app.css">
 
 
@@ -26,31 +23,38 @@
 
 <body>
 
-    <script defer src="./x2j.js"></script>
+    <script defer src="./xml2json.js"></script>
 
     <script defer src="./app.js"></script>
     <script defer src="./timeago.js"></script>
+    <script src="corona.js"></script>
 
+    <p id="ptitle">[ إحصائيات كورونا ]</p>
+    <div id="corona"></div>
+    </br>
+    </br>
+    </br>
+    </br>
+    <p id="ptitle2">[ آخر الاخبار و المستجدات ]</p>
     <div id="container">
 
         <div id="news"></div>
         </br>
         </br>
 
+
+        <div id=buttons>
+
+            <button id="btn2" class="hide-me">&nbsp;<&nbsp;</button> <p id=page>
+                    </p>
+
+                    <button id="btn1" class="hide-me">&nbsp;>&nbsp;</button>
+
+        </div>
+
         <button class="loader" id="btn"> </button>
 
-<div id=buttons>
-
-    <button  id="btn2" class="hide-me"> < </button>
-
-    <p id=page></p>
-    
-        <button  id="btn1" class="hide-me"> ></button>
-       
-</div>
-
-
-    </br>
+        </br>
 
     </div>
 </body>
@@ -58,5 +62,3 @@
 
 
 </html>
-
-
