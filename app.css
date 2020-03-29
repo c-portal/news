@@ -1,24 +1,53 @@
 /* make keyframes that tell the start state and the end state of our object */
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 
 
 
 
 .fade-in {
-  opacity:0;  /* make things invisible upon start */
-  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
 
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 
@@ -64,14 +93,14 @@ h1 {
   padding: 30px;
   overflow: hidden;
   direction: rtl;
-  margin-bottom: 100px;
+  margin-bottom: 200;
 }
 
 
 
 .box {
 
-  
+
 
   -webkit-animation-delay: 0.7s;
   -moz-animation-delay: 0.7s;
@@ -98,6 +127,10 @@ h1 {
 
   box-sizing: border-box;
   display: flex;
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+
   direction: rtl;
 
 
@@ -152,7 +185,6 @@ h1 {
 
 button {
   background-color: #1e1e1e;
-  ;
   color: #FFF;
   border: none;
   padding: 10px 15px;
@@ -191,7 +223,8 @@ button:active {
   border-top-color: rgb(250, 250, 250);
   border-left-color: rgb(255, 255, 255);
   border-radius: 50%;
-  animation: loader .750s 1000 ease forwards
+  animation: loader .750s 1000 ease forwards;
+  margin-bottom: 90;
 }
 
 @keyframes loader {
@@ -271,10 +304,10 @@ button:active {
 }
 
 
-#buttons  p {
+#buttons p {
 
-color: white;
-font-size: 30;
+  color: white;
+  font-size: 30;
 
 }
 
@@ -297,19 +330,60 @@ font-size: 30;
 }
 
 
-.fade-in {
-	opacity:0;  /* make things invisible upon start */
-	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	-moz-animation:fadeIn ease-in 1;
-	animation:fadeIn ease-in 1;
+#corona {
 
-	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	-moz-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
 
-	-webkit-animation-duration:1s;
-	-moz-animation-duration:1s;
-	animation-duration:1s;
+
+  display: flex;
+
+  padding: 10;
+  margin: 15;
+
+  background-color: #000000;
+  border-radius: 25px;
+
+
+}
+
+#corona p {
+
+  background-color: #1e1e1e;
+  border-radius: 50px;
+  font-size: 30;
+  flex: auto;
+  color: white;
+  margin: inherit;
+  padding: inherit;
+}
+
+#ptitle  {
+
+  font-size: 30;
+  color: white;
+  margin: auto;
+  margin-bottom: 10;
+  background-color: #000000;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 20;
+
+
 }
 
 
+#ptitle2  {
+
+  font-size: 30;
+  color: white;
+  margin: auto;
+  margin-bottom: 10;
+  background-color: #000000;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 20;
+
+
+}
