@@ -1,1 +1,661 @@
-var _0x1b51=['https://www.andaluspress.com/feed/','chuncked[s][f][\x22media:thumbnail\x22]','https://www.febrayer.com/feed/','<img\x20src=\x22./f.svg\x22\x20height=\x2240\x22\x20width=\x2240\x22\x20/>','<img\x20src=\x22./w.svg\x22\x20height=\x2240\x22\x20width=\x2240\x22\x20/>','channel','https://democpress.com/feed/','https://www.alhodoud.com/feed','https://www.alittihad.info/feed/','sort','https://cawalisse.com/feed/','http://www.ariffino.net/feed/','https://bayanealyaoume.press.ma/feed/','add','https://tetouanews.ma/feed/','./ss.png','<div\x20class=\x22thumb\x22>','null','removeEventListener','ptitle2','https://al3omk.com/feed','getElementById','https://www.alampress.info/?feed=rss2','https://lakome2.com/feed','match','https://agadir24.info/feed/','addEventListener','<img\x20src=','media:content','onerror','undefined','pubDate','https://tetouanplus.com/feed/','page','filter','innerHTML','scrollIntoView','<a\x20class=\x22whatsapp\x22\x20onclick=\x22window.open(\x27whatsapp://send?text=','https://www.noonpresse.com/feed/','btn2','title','https://assabah.ma/feed/','rss','https://kech24.com/feed/','https://www.al9anat.com/feed/','https://www.almaghreb24.com/feed/','btn1','btn','http://www.safitoday.com/feed/','loader','stringify','media:thumbnail','chuncked[s][f][\x22media:content\x22]','next','https://www.alyaoum24.com/feed/','push','concat','https://n24.ma/feed/','https://www.almassaepress.com/feed/','onload','</a>','hide-me','https://www.tizpress.com/feed/','https://dalil-rif.com/feed/','https://www.aljassour.com/feed/','<div\x20class=\x22box\x20fade-in\x22\x20>','\x27,\x27Facebook\x27,\x27width=600,height=300,left=\x27+(screen.availWidth/2-300)+\x27,top=\x27+(screen.availHeight/2-150)+\x27\x27);\x20return\x20false;\x22\x20href=\x22whatsapp://send?text=','https://tanjanews.com/feed/','news','prev','classList','https://laracheinfo.com/feed/','https://www.alhurra.ma/feed/','https://www.barlamane.com/feed/','GET','send','status','chuncked[s][f][\x22content:encoded\x22]','link','https://telexpresse.com/feed/','<a\x20class=\x22facebook\x22\x20onclick=\x22window.open(\x27https://www.facebook.com/sharer.php?u=','beforeend','https://www.mithaqarrabita.ma/feed/','https://presstetouan.com/feed/','length','content:encoded','apply','https://tanja24.com/feed/','remove','https://www.analkhabar.com/feed/','parseXml','https://www.agora.ma/feed/','click','responseText','https://aladabia.net/feed/','<a\x20target\x20=\x20\x22_blank\x22\x20href\x20=\x20\x22','map','open','https://rue20.com/feed/','</p>','jValue','https://akhbarnador.com/feed/','<p>','<div\x20class=\x22title\x22>','https://ahdath.info/feed','slice','item','replace','</div>','log'];(function(_0x5800bf,_0x1b5140){var _0x84d518=function(_0x4f083f){while(--_0x4f083f){_0x5800bf['push'](_0x5800bf['shift']());}};_0x84d518(++_0x1b5140);}(_0x1b51,0x7b));var _0x84d5=function(_0x5800bf,_0x1b5140){_0x5800bf=_0x5800bf-0x0;var _0x84d518=_0x1b51[_0x5800bf];return _0x84d518;};var urls=['https://ar.lesiteinfo.com/feed/',_0x84d5('0x7'),_0x84d5('0x1c'),_0x84d5('0xa')];var sorted;var btn=document['getElementById'](_0x84d5('0x22'));var btn1=document['getElementById'](_0x84d5('0x21'));var btn2=document[_0x84d5('0x8')](_0x84d5('0x1a'));var obj;var obj2=[];var regex=/(http(s?):)\.*([^("|')]+).(?:jpeg|gif|png|jpg)/;var i=0x0;var i2=0x0;var after;var after2=[];var after3=[];var proxy='https://cors-anywhere.herokuapp.com/';urls2=[_0x84d5('0xc'),_0x84d5('0x29'),_0x84d5('0x5b'),_0x84d5('0x58'),_0x84d5('0x51'),'https://alalam.ma/feed/','https://assabah.ma/feed/',_0x84d5('0x6d'),_0x84d5('0x6b'),'https://chamaly.ma/feed/',_0x84d5('0x32'),_0x84d5('0x67'),_0x84d5('0x1e'),_0x84d5('0x3a'),_0x84d5('0x2c'),_0x84d5('0x46'),_0x84d5('0x55'),_0x84d5('0x4a'),_0x84d5('0x36'),_0x84d5('0x42'),_0x84d5('0x1'),_0x84d5('0x13'),_0x84d5('0x4e'),_0x84d5('0x1f'),_0x84d5('0x9'),_0x84d5('0x68'),_0x84d5('0x3b'),_0x84d5('0x69'),_0x84d5('0x33'),_0x84d5('0x20'),_0x84d5('0x2d'),_0x84d5('0x4c'),_0x84d5('0x61'),_0x84d5('0x3c'),_0x84d5('0x63'),_0x84d5('0x45'),_0x84d5('0x19'),_0x84d5('0x31'),_0x84d5('0x6c'),_0x84d5('0x23')];function second(){return new Promise(_0x150845=>{_0x374d91(i2);function _0x374d91(_0x256748){if(_0x256748>urls2[_0x84d5('0x47')]-0x1){after3=[][_0x84d5('0x2b')][_0x84d5('0x49')]([],after2);_0x150845(after3);return 0x0;}else{let _0x16d88e=new XMLHttpRequest();_0x16d88e[_0x84d5('0x54')](_0x84d5('0x3d'),proxy+urls2[_0x256748]);_0x16d88e[_0x84d5('0x10')]=function(){_0x256748++;_0x374d91(_0x256748);};_0x16d88e[_0x84d5('0x2e')]=function(){xmlDoc4=_0x16d88e[_0x84d5('0x50')][_0x84d5('0x5e')](/<!\[CDATA\[/g,'\x20')[_0x84d5('0x5e')](/\]\]>/g,'');let _0x3c695f=X2J[_0x84d5('0x4d')](xmlDoc4);_0x530d13(_0x3c695f);};_0x16d88e[_0x84d5('0x3e')]();}}function _0x530d13(_0x43c672){try{if(!_0x43c672[0x0][_0x84d5('0x1d')][0x0]['channel'][0x0][_0x84d5('0x5d')]){i2++;_0x374d91(i2);}after2[_0x84d5('0x2a')](_0x43c672[0x0][_0x84d5('0x1d')][0x0]['channel'][0x0][_0x84d5('0x5d')]);i2++;if(i2>urls2['length']){var _0x1df419=[][_0x84d5('0x2b')]['apply']([],after2);_0x150845(_0x1df419);}else{_0x374d91(i2);}}catch(_0x53eb84){i2++;_0x374d91(i2);}}});}function first(){return new Promise(_0x540977=>{_0x386a3e(i);function _0x386a3e(_0x5fbfba){let _0xf40b4=new XMLHttpRequest();_0xf40b4[_0x84d5('0x54')](_0x84d5('0x3d'),proxy+urls[_0x5fbfba]);_0xf40b4[_0x84d5('0x10')]=function(){_0x386a3e(_0x5fbfba);};_0xf40b4[_0x84d5('0x2e')]=function(){console[_0x84d5('0x60')](_0x5fbfba);if(_0xf40b4[_0x84d5('0x3f')]===0xc8){xmlDoc3=_0xf40b4[_0x84d5('0x50')][_0x84d5('0x5e')](/<!\[CDATA\[/g,'\x20')[_0x84d5('0x5e')](/\]\]>/g,'');let _0x5a741d=X2J['parseXml'](xmlDoc3);_0x3eee9f(_0x5a741d);}else{console['log']('We\x20connected\x20to\x20the\x20server,\x20but\x20it\x20returned\x20an\x20error.');_0x386a3e(_0x5fbfba);}};_0xf40b4[_0x84d5('0x3e')]();}function _0x3eee9f(_0xa0d43d){obj2[_0x84d5('0x2a')](_0xa0d43d[0x0]['rss'][0x0][_0x84d5('0x66')][0x0][_0x84d5('0x5d')]);i++;if(i>urls[_0x84d5('0x47')]-0x1){var _0x596f86=[][_0x84d5('0x2b')]['apply']([],obj2);_0x540977(_0x596f86);}else{_0x386a3e(i);}}});}function duplicates(_0x1b5319){const _0x6b92d7=_0x1b5319[_0x84d5('0x53')](_0x36e1cf=>_0x36e1cf[_0x84d5('0x1b')][0x0][_0x84d5('0x57')])['map']((_0xdc870d,_0x3994b0,_0x22deda)=>_0x22deda['indexOf'](_0xdc870d)===_0x3994b0&&_0x3994b0)[_0x84d5('0x15')](_0x301e8b=>_0x1b5319[_0x301e8b])[_0x84d5('0x53')](_0x283873=>_0x1b5319[_0x283873]);sort(_0x6b92d7);}function sort(_0x10a42a){var _0x1c8e97=_0x10a42a[_0x84d5('0x6a')](function(_0x19d912,_0x47ac47){return new Date(_0x47ac47[_0x84d5('0x12')][0x0][_0x84d5('0x57')])-new Date(_0x19d912['pubDate'][0x0][_0x84d5('0x57')]);});chuncker(_0x1c8e97);}function chuncker(_0x447ee8){chuncked=[];var _0x21056b,_0x2fbd4e,_0x5d9d72,_0x151c33=0x5;for(_0x21056b=0x0,_0x2fbd4e=_0x447ee8[_0x84d5('0x47')];_0x21056b<_0x2fbd4e;_0x21056b+=_0x151c33){_0x5d9d72=_0x447ee8[_0x84d5('0x5c')](_0x21056b,_0x21056b+_0x151c33);chuncked[_0x84d5('0x2a')](_0x5d9d72);}var _0x38a10c=0x0;present(chuncked,_0x38a10c);}function present(_0xe47317,_0x4fcc0a){document[_0x84d5('0x8')](_0x84d5('0x37'))[_0x84d5('0x16')]='';ss=_0x4fcc0a+0x1;document[_0x84d5('0x8')](_0x84d5('0x14'))['innerHTML']=ss+'/'+_0xe47317['length'];if(_0x4fcc0a>_0xe47317[_0x84d5('0x47')]||_0x4fcc0a<0x0){_0x4fcc0a=0x0;}let _0x762499=document[_0x84d5('0x8')](_0x84d5('0x37'));let _0x1ef1b0=_0xe47317[_0x4fcc0a][_0x84d5('0x47')];let _0x224a2c='';for(f=0x0;f<_0x1ef1b0;f++){image='';image1='';image0='';if(_0xe47317[_0x4fcc0a][f][_0x84d5('0x48')]){string=_0x84d5('0x40');_0x551c5f(eval(string));}else if(_0xe47317[_0x4fcc0a][f][_0x84d5('0x26')]){string=_0x84d5('0x62');_0x551c5f(eval(string));}else if(_0xe47317[_0x4fcc0a][f][_0x84d5('0xf')]){string=_0x84d5('0x27');_0x551c5f(eval(string));}function _0x551c5f(_0x4edbc0){image0=JSON[_0x84d5('0x25')](eval(_0x4edbc0));var _0x395313=image0[_0x84d5('0xb')](regex);if(typeof _0x395313!=_0x84d5('0x4')&&_0x395313||typeof _0x395313!=_0x84d5('0x11')&&_0x395313){image=_0x395313[0x0];return image;}else{image=_0x84d5('0x2');return image;}}link=_0xe47317[_0x4fcc0a][f][_0x84d5('0x41')][0x0][_0x84d5('0x57')];time=_0xe47317[_0x4fcc0a][f][_0x84d5('0x12')][0x0][_0x84d5('0x57')];title=_0xe47317[_0x4fcc0a][f][_0x84d5('0x1b')][0x0][_0x84d5('0x57')];_0x224a2c+=_0x84d5('0x34');_0x224a2c+=_0x84d5('0x3');_0x224a2c+=_0x84d5('0xe')+image+'>';_0x224a2c+=_0x84d5('0x5f');_0x224a2c+=_0x84d5('0x5a');_0x224a2c+=_0x84d5('0x52')+link+'\x22>'+title+_0x84d5('0x2f');_0x224a2c+=_0x84d5('0x59')+timeAgo(time)+_0x84d5('0x56');_0x224a2c+='<div\x20class=\x22share\x22>';_0x224a2c+=_0x84d5('0x43')+link+'\x27,\x27Facebook\x27,\x27width=600,height=300,left=\x27+(screen.availWidth/2-300)+\x27,top=\x27+(screen.availHeight/2-150)+\x27\x27);\x20return\x20false;\x22\x20href=\x22https://www.facebook.com/sharer.php?u='+link+'\x22>';_0x224a2c+=_0x84d5('0x64');_0x224a2c+=_0x84d5('0x2f');_0x224a2c+=_0x84d5('0x18')+link+_0x84d5('0x35')+link+'\x22>';_0x224a2c+=_0x84d5('0x65');_0x224a2c+='</a>';_0x224a2c+=_0x84d5('0x5f');_0x224a2c+='</div>';_0x224a2c+='</div>';}_0x762499['insertAdjacentHTML'](_0x84d5('0x44'),_0x224a2c);document[_0x84d5('0x8')](_0x84d5('0x22'))[_0x84d5('0x39')][_0x84d5('0x5e')](_0x84d5('0x24'),'hide-me');document['getElementById']('btn1')['classList'][_0x84d5('0x4b')](_0x84d5('0x30'));document['getElementById'](_0x84d5('0x6'))[_0x84d5('0x17')]();document[_0x84d5('0x8')]('btn1')[_0x84d5('0xd')]('click',_0x31b2b6,![]);document['getElementById'](_0x84d5('0x1a'))[_0x84d5('0xd')](_0x84d5('0x4f'),_0x8f1d45,![]);function _0x31b2b6(){document['getElementById'](_0x84d5('0x1a'))[_0x84d5('0x39')][_0x84d5('0x4b')](_0x84d5('0x30'));document[_0x84d5('0x8')](_0x84d5('0x1a'))[_0x84d5('0x5')](_0x84d5('0x4f'),_0x8f1d45);_0x4fcc0a++;if(_0x4fcc0a>_0xe47317[_0x84d5('0x47')]-0x1){_0x4fcc0a=_0xe47317['length']-0x1;btn1['classList'][_0x84d5('0x0')]('hide-me');document[_0x84d5('0x8')]('btn2')[_0x84d5('0xd')](_0x84d5('0x4f'),_0x8f1d45,![]);return;}else{console[_0x84d5('0x60')](_0x84d5('0x28'));document[_0x84d5('0x8')](_0x84d5('0x37'))['innerHTML']='';document[_0x84d5('0x8')](_0x84d5('0x21'))[_0x84d5('0x5')](_0x84d5('0x4f'),_0x31b2b6);present(_0xe47317,_0x4fcc0a);}}function _0x8f1d45(){document[_0x84d5('0x8')](_0x84d5('0x21'))[_0x84d5('0x39')][_0x84d5('0x4b')](_0x84d5('0x30'));document[_0x84d5('0x8')](_0x84d5('0x21'))[_0x84d5('0x5')](_0x84d5('0x4f'),_0x31b2b6);_0x4fcc0a--;if(_0x4fcc0a<0x0){_0x4fcc0a=0x0;btn2[_0x84d5('0x39')][_0x84d5('0x0')](_0x84d5('0x30'));document['getElementById'](_0x84d5('0x21'))[_0x84d5('0xd')]('click',_0x31b2b6,![]);return;}else{console[_0x84d5('0x60')](_0x84d5('0x38'));document[_0x84d5('0x8')](_0x84d5('0x37'))['innerHTML']='';document[_0x84d5('0x8')](_0x84d5('0x1a'))['removeEventListener'](_0x84d5('0x4f'),_0x8f1d45);present(_0xe47317,_0x4fcc0a);}}}async function dowork(){const _0x31a7f2=await first();objectm=_0x31a7f2;sort(_0x31a7f2);response2=await second();objectm2=response2;objectm2[_0x84d5('0x2a')](objectm);objectm3=[][_0x84d5('0x2b')][_0x84d5('0x49')]([],objectm2);duplicates(objectm3);}dowork();
+
+var urls = [
+    "https://ar.lesiteinfo.com/feed/",
+    "https://al3omk.com/feed",
+    "https://assabah.ma/feed/",
+    "https://lakome2.com/feed"
+]
+
+var sorted
+
+
+var btn = document.getElementById("btn");
+var btn1 = document.getElementById("btn1");
+var btn2 = document.getElementById("btn2");
+
+
+var obj
+var obj2 = []
+
+var regex = /(http(s?):)\.*([^("|')]+).(?:jpeg|gif|png|jpg)/
+
+
+var i = 0;
+
+
+////////////////////////////////////////////////////
+
+
+var i2 = 0
+var after
+var after2 = []
+var after3 = []
+
+
+
+var proxy = 'https://cors-anywhere.herokuapp.com/'
+
+
+urls2 = [
+    "https://agadir24.info/feed/",
+    "https://www.alyaoum24.com/feed/",
+    "https://ahdath.info/feed",
+    "https://akhbarnador.com/feed/",
+    "https://aladabia.net/feed/",
+    "https://alalam.ma/feed/",
+    "https://assabah.ma/feed/",
+    "https://bayanealyaoume.press.ma/feed/",
+    "https://cawalisse.com/feed/",
+    "https://chamaly.ma/feed/",
+    "https://dalil-rif.com/feed/",
+    "https://democpress.com/feed/",
+    "https://kech24.com/feed/",
+    "https://laracheinfo.com/feed/",
+    "https://n24.ma/feed/",
+    "https://presstetouan.com/feed/",
+    "https://rue20.com/feed/",
+    "https://tanja24.com/feed/",
+    "https://tanjanews.com/feed/",
+    "https://telexpresse.com/feed/",
+    "https://tetouanews.ma/feed/",
+    "https://tetouanplus.com/feed/",
+    "https://www.agora.ma/feed/",
+    "https://www.al9anat.com/feed/",
+    "https://www.alampress.info/?feed=rss2",
+    "https://www.alhodoud.com/feed",
+    "https://www.alhurra.ma/feed/",
+    "https://www.alittihad.info/feed/",
+    "https://www.aljassour.com/feed/",
+    "https://www.almaghreb24.com/feed/",
+    "https://www.almassaepress.com/feed/",
+    "https://www.analkhabar.com/feed/",
+    "https://www.andaluspress.com/feed/",
+    "https://www.barlamane.com/feed/",
+    "https://www.febrayer.com/feed/",
+    "https://www.mithaqarrabita.ma/feed/",
+    "https://www.noonpresse.com/feed/",
+    "https://www.tizpress.com/feed/",
+    "http://www.ariffino.net/feed/",
+    "http://www.safitoday.com/feed/",
+]
+
+
+
+
+////////////////////////////////////////
+
+
+function second() {
+
+    return new Promise((resolve) => {
+
+        send2(i2)
+
+        function send2(i2) {
+
+
+            if (i2 > urls2.length - 1) {
+
+                after3 = [].concat.apply([], after2);
+                resolve(after3)
+                return 0
+            } else {
+
+
+
+                let ourRequest3 = new XMLHttpRequest();
+                ourRequest3.open('GET', proxy + urls2[i2]);
+
+                ourRequest3.onerror = function () {
+                    i2++
+                    send2(i2);
+                }
+
+                ourRequest3.onload = function () {
+
+
+                    xmlDoc4 = ourRequest3.responseText.replace(/<!\[CDATA\[/g, " ").replace(/\]\]>/g, "");
+
+
+                    let after = X2J.parseXml(xmlDoc4);
+
+                    
+                    concat2(after);
+                }
+                ourRequest3.send()
+
+            }
+        }
+
+        ////////////////////////////////////
+
+        function concat2(data) {
+
+            try {
+
+
+                if (!data[0].rss[0].channel[0].item) {
+                    i2++
+                    send2(i2);
+
+                }
+
+                after2.push(data[0].rss[0].channel[0].item);
+
+
+                i2++
+
+                if (i2 > urls2.length) {
+
+                    var after3 = [].concat.apply([], after2);
+
+
+                    resolve(after3)
+
+                } else {
+
+
+                    send2(i2);
+                }
+
+            } catch (e) {
+
+                i2++
+                send2(i2);
+
+            }
+
+
+        }
+
+
+    })
+
+
+}
+
+//////////////////////////////////////////////////////
+
+
+
+function first() {
+
+    return new Promise((resolve) => {
+
+
+            send(i)
+
+            function send(i) {
+
+                let ourRequest2 = new XMLHttpRequest();
+                ourRequest2.open('GET', proxy + urls[i]);
+                ourRequest2.onerror = function () {
+
+                    send(i)
+
+                }
+                ourRequest2.onload = function () {
+
+                    console.log(i)
+
+
+                    if (ourRequest2.status === 200) {
+
+                        //parser = new DOMParser()
+                        // xmlDoc = parser.parseFromString(ourRequest2.responseText, "text/xml")
+
+
+                        // xmlDoc2 = (new XMLSerializer()).serializeToString(ourRequest2.responseXML);
+
+                        xmlDoc3 = ourRequest2.responseText.replace(/<!\[CDATA\[/g, " ").replace(/\]\]>/g, "");
+
+
+                        let obj = X2J.parseXml(xmlDoc3);
+
+
+                        concat(obj);
+
+                    } else {
+
+                        console.log("We connected to the server, but it returned an error.");
+
+                        send(i)
+
+                    }
+
+                }
+                ourRequest2.send()
+
+            }
+
+
+
+            /////////////////////////
+
+
+
+            function concat(data) {
+
+
+                obj2.push(data[0].rss[0].channel[0].item);
+
+                i++
+                if (i > urls.length - 1) {
+
+
+                    var obj3 = [].concat.apply([], obj2);
+
+
+                    resolve(obj3)
+                } else {
+
+
+                    send(i);
+                }
+
+            }
+
+
+        }
+
+    )
+
+
+}
+
+/////////////////////////////
+
+
+function duplicates(data) {
+
+    const unique = data
+        .map(e => e.title[0].jValue)
+
+        // store the keys of the unique objects
+        .map((e, i, final) => final.indexOf(e) === i && i)
+
+        // eliminate the dead keys & store unique objects
+        .filter(e => data[e]).map(e => data[e]);
+
+    sort(unique)
+}
+
+
+///////////////////////////////
+
+
+function sort(data) {
+
+
+
+    /*
+       let length = merged.length
+
+
+       for (f = 0; f < length; f++) {
+
+          merged[f].pubDate[0].jValue =  merged[f].pubDate[0].jValue.substr(5);
+
+          a = Date.parse(merged[f].pubDate[0].jValue);
+    
+          s = { 'boogie' : a  } 
+
+           merged.push(merged[f].pubDate[0].s)
+           
+       } */
+
+
+
+    var sorted = data.sort(function (a, b) {
+        return new Date(b.pubDate[0].jValue) - new Date(a.pubDate[0].jValue);
+    });
+
+
+
+
+    chuncker(sorted);
+
+}
+
+
+
+//////////////////////////////
+
+function chuncker(sorted) {
+
+    chuncked = []
+
+    var c, j, temparray, chunk = 5;
+    for (c = 0, j = sorted.length; c < j; c += chunk) {
+        temparray = sorted.slice(c, c + chunk);
+
+        chuncked.push(temparray);
+
+    }
+
+
+    var s = 0
+
+ 
+
+    present(chuncked, s)
+
+
+
+}
+
+
+
+
+////////////////////////////
+
+
+function present(chuncked, s) {
+
+
+
+
+    document.getElementById("news").innerHTML = "";
+
+
+
+    ss = s + 1
+
+
+
+    document.getElementById("page").innerHTML = ss + "/" + chuncked.length
+
+
+
+    if (s > chuncked.length || s < 0) {
+        s = 0
+    }
+
+
+
+
+    let newsContainer = document.getElementById("news");
+
+
+
+    let length = chuncked[s].length
+
+
+
+    let htmlString = "";
+
+
+
+
+
+
+    for (f = 0; f < length; f++) {
+
+
+        //image
+
+
+
+      image = ""
+
+      image1 = ""
+
+      image0 = ""
+
+
+   
+            if (chuncked[s][f]["content:encoded"]) {
+
+                string =  "chuncked[s][f][\"content:encoded\"]"
+
+                imagef(eval(string))
+
+                }
+
+                else if (chuncked[s][f]["media:thumbnail"]) {
+
+               string = "chuncked[s][f][\"media:thumbnail\"]"
+
+                imagef(eval(string))
+
+                }
+
+                else if (chuncked[s][f]["media:content"]) {
+
+                    string = "chuncked[s][f][\"media:content\"]"
+
+                    imagef(eval(string))
+    
+                    }
+                    
+
+        function imagef(string)  {
+            
+          //  console.log(eval(string))
+      
+            image0 = JSON.stringify(eval(string))
+      
+            var image1 = image0.match(regex) 
+      
+             if ( typeof image1 != 'null' && image1 || typeof image1 != 'undefined' && image1) {
+      
+             image = image1[0]
+      
+          //  console.log(image)
+
+            return image
+        }
+
+            else {
+
+                 image = "./ss.png"
+
+                return image
+    
+            }
+      
+        }
+
+
+        // link
+
+        link = chuncked[s][f].link[0].jValue
+
+
+        // time
+
+        time = chuncked[s][f].pubDate[0].jValue
+
+        //title 
+
+        title = chuncked[s][f].title[0].jValue
+
+
+
+
+        htmlString += "<div class=\"box fade-in\" >"
+
+        htmlString += "<div class=\"thumb\">"
+
+        htmlString += "<img src=" + image + ">"
+
+        htmlString += "</div>"
+
+        htmlString += "<div class=\"title\">"
+        htmlString += "<a target = \"_blank\" href = \"" + link + "\">" + title + "</a>"
+
+
+
+
+        htmlString += "<p>" + timeAgo(time) + "</p>"
+
+        htmlString += "<div class=\"share\">"
+        htmlString += "<a class=\"facebook\" onclick=\"window.open('https://www.facebook.com/sharer.php?u=" + link + "','Facebook','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;\" href=\"https://www.facebook.com/sharer.php?u=" + link + "\">"
+
+        htmlString += "<img src=\"./f.svg\" height=\"40\" width=\"40\" />"
+        htmlString += "</a>"
+
+
+
+        htmlString += "<a class=\"whatsapp\" onclick=\"window.open('whatsapp://send?text=" + link + "','Facebook','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;\" href=\"whatsapp://send?text=" + link + "\">"
+
+        htmlString += "<img src=\"./w.svg\" height=\"40\" width=\"40\" />"
+        htmlString += "</a>"
+
+
+        htmlString += "</div>"
+
+        htmlString += "</div>"
+
+
+
+        htmlString += "</div>"
+
+
+
+
+    }
+
+    newsContainer.insertAdjacentHTML('beforeend', htmlString);
+
+    document.getElementById("btn").classList.replace('loader', 'hide-me');
+
+
+    document.getElementById("btn1").classList.remove("hide-me");
+
+    document.getElementById("ptitle2").scrollIntoView();
+
+
+    document.getElementById('btn1').addEventListener('click', next, false);
+
+
+    document.getElementById('btn2').addEventListener('click', prev, false);
+
+
+
+
+
+    //b1
+
+    function next() {
+
+
+
+
+
+        document.getElementById("btn2").classList.remove("hide-me");
+
+
+        document.getElementById('btn2').removeEventListener('click', prev);
+
+
+
+        s++
+
+
+        if (s > chuncked.length - 1) {
+            s = chuncked.length - 1
+
+            btn1.classList.add("hide-me");
+
+            document.getElementById('btn2').addEventListener('click', prev, false);
+
+            return
+
+
+        } else {
+
+            console.log("next")
+            document.getElementById("news").innerHTML = "";
+
+            document.getElementById('btn1').removeEventListener('click', next);
+
+
+            present(chuncked, s)
+
+
+        }
+    }
+
+
+    //b2
+
+
+    function prev() {
+
+
+        document.getElementById("btn1").classList.remove("hide-me");
+
+
+        document.getElementById('btn1').removeEventListener('click', next);
+
+
+        s--
+
+
+        if (s < 0) {
+
+            s = 0
+
+            btn2.classList.add("hide-me");
+
+
+            document.getElementById('btn1').addEventListener('click', next, false);
+
+            return
+
+
+
+        } else {
+
+            console.log("prev")
+            document.getElementById("news").innerHTML = "";
+
+            document.getElementById('btn2').removeEventListener('click', prev);
+
+
+            present(chuncked, s)
+
+
+        }
+    }
+
+}
+
+
+
+
+
+////////////////////////
+
+async function dowork() {
+
+
+    const response = await first()
+
+
+    objectm = response
+
+    sort(response)
+
+
+
+    ///////
+
+    response2 = await second()
+
+    objectm2 = response2
+
+
+    objectm2.push(objectm)
+
+    objectm3 = [].concat.apply([], objectm2);
+
+
+    duplicates(objectm3)
+
+
+}
+
+
+dowork()
