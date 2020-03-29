@@ -33,7 +33,7 @@ var after3 = []
 
 
 
-var proxy = 'https://cors-anywhere.herokuapp.com/'
+var proxy = 'https://proxycarlos.herokuapp.com/'
 
 
 urls2 = [
