@@ -42,7 +42,7 @@ function corona(data) {
     let string = "";
 
 
-    string += "<p class=fade-in>" + cobj.data[0].recovered +  " : " + "المتعافون 🤒" + "</p>"
+    string += "<p class=fade-in>" + cobj.data[0].recovered +  " : " + "المتعافون 😃" + "</p>"
 
     string += "<p class=fade-in>" + cobj.data[0].deaths +  " : " +"الوفيات 💀" + "</p>"
 
