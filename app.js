@@ -102,6 +102,7 @@ function second() {
             } else {
 
 
+                console.log(i2)
 
                 let ourRequest3 = new XMLHttpRequest();
                 ourRequest3.open('GET', proxy + urls2[i2]);
