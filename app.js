@@ -33,7 +33,7 @@ var after3 = []
 
 
 
-var proxy = 'https://proxycarlos.herokuapp.com/'
+var proxy = 'https://proxycarlos.herokuapp.com/?q='
 
 
 urls2 = [
