@@ -101,6 +101,7 @@ function second() {
                 return 0
             } else {
 
+                document.getElementById("counter").innerHTML= "   " + 39 - i2
 
                 console.log(i2)
 
@@ -148,8 +149,10 @@ function second() {
 
                 if (i2 > urls2.length) {
 
+                    
                     var after3 = [].concat.apply([], after2);
 
+                    
 
                     resolve(after3)
 
@@ -644,6 +647,9 @@ async function dowork() {
     ///////
 
     response2 = await second()
+
+    document.getElementById("counter").innerHTML= ""
+
 
     objectm2 = response2
 
