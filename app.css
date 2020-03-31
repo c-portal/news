@@ -385,7 +385,14 @@ button:active {
   background-color: #000000;
   border-radius: 25px;
   display: inline-block;
-  padding: 20;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+#ptitle2  p {
+
+  display: inline-block;
 
 
 }
