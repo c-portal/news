@@ -647,7 +647,7 @@ async function dowork() {
     const response = await first()
 
 
-    objectm = response
+     
 
     sort(response)
 
@@ -660,12 +660,10 @@ async function dowork() {
     document.getElementById("counter").innerHTML= ""
 
 
-    objectm2 = response2
 
+    response2.push(response)
 
-    objectm2.push(objectm)
-
-    objectm3 = [].concat.apply([], objectm2);
+    objectm3 = [].concat.apply([], response2);
 
 
     duplicates(objectm3)
