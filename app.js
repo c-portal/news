@@ -20,6 +20,7 @@ var obj2 = []
 var regex = /(http(s?):)\.*([^("|')]+).(?:jpeg|gif|png|jpg)/
 
 
+
 var i = 0;
 
 
@@ -394,6 +395,14 @@ function present(chuncked, s) {
 
 
     for (f = 0; f < length; f++) {
+
+
+///////
+
+if (chuncked[s][f].link[0].jValue.match("sport")) {
+
+    continue;
+}
 
 
         //image
