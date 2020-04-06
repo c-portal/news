@@ -1,4 +1,6 @@
 
+
+
 var urls = [
     "https://ar.lesiteinfo.com/feed/",
     "https://al3omk.com/feed",
@@ -37,7 +39,7 @@ var after3 = []
 var proxy = 'https://proxycarlos.herokuapp.com/'
 
 
-urls2 = [
+var urls2 = [
     "https://agadir24.info/feed/",
     "https://www.alyaoum24.com/feed/",
     "https://ahdath.info/feed",
@@ -117,7 +119,7 @@ function second() {
                 ourRequest3.onload = function () {
 
 
-                    xmlDoc4 = ourRequest3.responseText.replace(/<!\[CDATA\[/g, " ").replace(/\]\]>/g, "");
+                 var   xmlDoc4 = ourRequest3.responseText.replace(/<!\[CDATA\[/g, " ").replace(/\]\]>/g, "");
 
 
                     let after = X2J.parseXml(xmlDoc4);
@@ -212,7 +214,7 @@ function first() {
 
                         // xmlDoc2 = (new XMLSerializer()).serializeToString(ourRequest2.responseXML);
 
-                        xmlDoc3 = ourRequest2.responseText.replace(/<!\[CDATA\[/g, " ").replace(/\]\]>/g, "");
+                      var  xmlDoc3 = ourRequest2.responseText.replace(/<!\[CDATA\[/g, " ").replace(/\]\]>/g, "");
 
 
                         let obj = X2J.parseXml(xmlDoc3);
@@ -328,7 +330,7 @@ function sort(data) {
 
 function chuncker(sorted) {
 
-    chuncked = []
+    var chuncked = []
 
     var c, j, temparray, chunk = 5;
     for (c = 0, j = sorted.length; c < j; c += chunk) {
@@ -357,14 +359,14 @@ function chuncker(sorted) {
 
 function present(chuncked, s) {
 
-
+var f
 
 
     document.getElementById("news").innerHTML = "";
 
 
 
-    ss = s + 1
+   var ss = s + 1
 
 
 
@@ -409,17 +411,17 @@ if (chuncked[s][f].link[0].jValue.match("sport")) {
 
 
 
-      image = ""
+     var image = ""
 
-      image1 = ""
+    var  image1 = ""
 
-      image0 = ""
+   var   image0 = ""
 
 
    
             if (chuncked[s][f]["content:encoded"]) {
 
-                string =  "chuncked[s][f][\"content:encoded\"]"
+             var   string =  "chuncked[s][f][\"content:encoded\"]"
 
                 imagef(eval(string))
 
@@ -472,16 +474,16 @@ if (chuncked[s][f].link[0].jValue.match("sport")) {
 
         // link
 
-        link = chuncked[s][f].link[0].jValue
+       var link = chuncked[s][f].link[0].jValue
 
 
         // time
 
-        time = chuncked[s][f].pubDate[0].jValue
+     var   time = chuncked[s][f].pubDate[0].jValue
 
         //title 
 
-        title = chuncked[s][f].title[0].jValue
+      var  title = chuncked[s][f].title[0].jValue
 
 
 
@@ -655,15 +657,14 @@ async function dowork() {
 
     ///////
 
-    response2 = await second()
+ const   response2 = await second()
 
     document.getElementById("counter").innerHTML= ""
 
 
-
     response2.push(response)
 
-    objectm3 = [].concat.apply([], response2);
+ var   objectm3 = [].concat.apply([], response2);
 
 
     duplicates(objectm3)
