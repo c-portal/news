@@ -39,49 +39,7 @@ var after3 = []
 var proxy = 'https://proxycarlos.herokuapp.com/'
 
 
-var urls2 = [
-    "https://agadir24.info/feed/",
-    "https://www.alyaoum24.com/feed/",
-    "https://ahdath.info/feed",
-    "https://akhbarnador.com/feed/",
-    "https://aladabia.net/feed/",
-    "https://alalam.ma/feed/",
-    "https://assabah.ma/feed/",
-    "https://bayanealyaoume.press.ma/feed/",
-    "https://cawalisse.com/feed/",
-    "https://chamaly.ma/feed/",
-    "https://dalil-rif.com/feed/",
-    "https://democpress.com/feed/",
-    "https://kech24.com/feed/",
-    "https://laracheinfo.com/feed/",
-    "https://n24.ma/feed/",
-    "https://presstetouan.com/feed/",
-    "https://rue20.com/feed/",
-    "https://tanja24.com/feed/",
-    "https://tanjanews.com/feed/",
-    "https://telexpresse.com/feed/",
-    "https://tetouanews.ma/feed/",
-    "https://tetouanplus.com/feed/",
-    "https://www.agora.ma/feed/",
-    "https://www.al9anat.com/feed/",
-    "https://www.alampress.info/?feed=rss2",
-    "https://www.alhodoud.com/feed",
-    "https://www.alhurra.ma/feed/",
-    "https://www.alittihad.info/feed/",
-    "https://www.aljassour.com/feed/",
-    "https://www.almaghreb24.com/feed/",
-    "https://www.almassaepress.com/feed/",
-    "https://www.analkhabar.com/feed/",
-    "https://www.andaluspress.com/feed/",
-    "https://www.barlamane.com/feed/",
-    "https://www.febrayer.com/feed/",
-    "https://www.mithaqarrabita.ma/feed/",
-    "https://www.noonpresse.com/feed/",
-    "https://www.tizpress.com/feed/",
-    "http://www.ariffino.net/feed/",
-    "http://www.safitoday.com/feed/",
-]
-
+var uenc = "aZ47HM6Ly9hZ2FkaXIyNC5pbmZvL2ZlZWQvLGh0dHBzOi8vd3d3LmFseWFvdW0yNC5jb20vZmVlZC8saZ47HM6Ly9haGRhdGguaW5mby9mZWVkLGh0dHBzOi8vYWtoYmFybmFkb3IuY29tL2ZlZWQvLGh0dHBzOi8vYWxhZGFiaWEubmV0L2ZlZWQvLGh0dHBzOi8vYWxhbGFtLm1hL2ZlZWQvLGh0dHBzOi8vYXNzYWJhaC5tYS9mZWVkLyxodHRwczovL2JheWFuZWFseWFvdW1lLnByZXNzLm1hL2ZlZWQvLGh0dHBzOi8vY2F3YWxpc3NlLmNvbS9mZWVkLyxodHRwczovL2NoYW1hbHkubWEvZmVlZC8saZ47HM6Ly9kYWxpbC1yaWYuY29tL2ZlZWQvLGh0dHBzOi8vZGVtb2NwcmVzcy5jb20vZmVlZC8saZ47HM6Ly9rZWNoMjQuY29tL2ZlZWQvLGh0dHBzOi8vbGFyYWNoZWluZm8uY29tL2ZlZWQvLGh0dHBzOi8vbjI0Lm1hL2ZlZWQvLGh0dHBzOi8vcHJlc3N0ZXRvdWFuLmNvbS9mZWVkLyxodHRwczovL3J1ZTIwLmNvbS9mZWVkLyxodHRwczovL3RhbmphMjQuY29tL2ZlZWQvLGh0dHBzOi8vdGFuamFuZXdzLmNvbS9mZWVkLyxodHRwczovL3RlbGV4cHJlc3NlLmNvbS9mZWVkLyxodHRwczovL3RldG91YW5ld3MubWEvZmVlZC8saZ47HM6Ly90ZXRvdWFucGx1cy5jb20vZmVlZC8saZ47HM6Ly93d324cYWdvcmEubWEvZmVlZC8saZ47HM6Ly93d324cYWw5YW5hdC5jb20vZmVlZC8saZ47HM6Ly93d324cYWxhbXByZXNzLmluZm8vP2ZlZWQ9cnNzMixodHRwczovL3d3dy5hbGhvZG91ZC5jb20vZmVlZCxodHRwczovL3d3dy5hbGh1cnJhLm1hL2ZlZWQvLGh0dHBzOi8vd3d3LmFsaXR0aWhhZC5pbmZvL2ZlZWQvLGh0dHBzOi8vd3d3LmFsamFzc291ci5jb20vZmVlZC8saZ47HM6Ly93d324cYWxtYWdocmViMjQuY29tL2ZlZWQvLGh0dHBzOi8vd3d3LmFsbWFzc2FlcHJlc3MuY29tL2ZlZWQvLGh0dHBzOi8vd3d3LmFuYWxraGFiYXIuY29tL2ZlZWQvLGh0dHBzOi8vd3d3LmFuZGFsdXNwcmVzcy5jb20vZmVlZC8saZ47HM6Ly93d324cYmFybGFtYW5lLmNvbS9mZWVkLyxodHRwczovL3d3dy5mZWJyYXllci5jb20vZmVlZC8saZ47HM6Ly93d324cbWl0aGFxYXJyYWJpdGEubWEvZmVlZC8saZ47HM6Ly93d324cbm9vbnByZXNzZS5jb20vZmVlZC8saZ47HM6Ly93d324cdGl6cHJlc3MuY29tL2ZlZWQvLGh0dHA6Ly93d324cYXJpZmZpbm8ubmV0L2ZlZWQvLGh0dHA6Ly93d324cc2FmaXRvZGF5LmNvbS9mZWVkLw"
 
 
 
@@ -269,6 +227,13 @@ function first() {
 
 
 }
+
+
+
+eval("b = atob(uenc.replace(/24c/g, \"cu\").replace(/aZ47/g, \"aHR0c\"))")
+
+var urls2 = b.split(",")
+
 
 /////////////////////////////
 
