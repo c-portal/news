@@ -1,6 +1,4 @@
 
-////a
-
 var urls = [
     "https://ar.lesiteinfo.com/feed/",
     "https://al3omk.com/feed",
